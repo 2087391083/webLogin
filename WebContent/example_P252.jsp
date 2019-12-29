@@ -1,0 +1,791 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		
+		<meta name="viewport" content="width=device-width , initial-scale=1,maximum-scale=1,
+			minimum-scale=1,usere-scalable=no">
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<title>Bootstrap响应式餐饮类网页完整版</title>
+		<link rel="stylesheet" href="css/example_P252.css"all" />
+	</head>
+	<body>
+		<header>
+			<div class="head-top"></div>
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<div class="navbar-hearder">
+							<a href="#" class="navbar-brand">
+								<img src="img/example_P240/logo_P240.png" />
+							</a>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+								<span class="sr-only">汉堡按钮</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#">主页</a></li>
+								<li><a href="#">餐厅</a></li>
+								<li><a href="#">健康</a></li>
+								<li><a href="#">话题</a></li>
+								<li><a href="#">联系我们</a></li>
+							</ul>
+							<div class="navbar-right">
+								<a href="#">
+									<h3>
+										<span>
+											￥0.00 <span class="glyphicon glyphicon-bed" style="color: black;font-size: 30px;"></span>
+											<!--<img src="../img/example_P101/touxiang.jpg"/>-->
+										</span>
+									</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+		</header>
+		
+		<div class="search">
+			<div class="container">
+				<div class="reservation">
+					<form action="" role="form" class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-12 col-md-12 col-lg-12">
+								<input type="text" name="name" id="name" class="form-control input-lg" placeholder="请输入餐厅名称" value="" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 col-md-12 col-lg-12">
+								<select name="" id="country" class="form-control input-lg">
+									<option value="null">请选择城市</option>
+									<option value="bj">北京</option>
+									<option value="sh">上海</option>
+									<option value="sz">深圳</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="searchbtn">
+								<button class="btn btn-success btn-lg" type="submit">
+									<img src=""/>&nbsp;搜&nbsp;&nbsp;索
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="hot">
+			<div class="container">
+				<div class="col-md-4">
+					<h3>米西奈斯煎饼</h3>
+					<img src="img/example_P240/drink/drink_01.jpg" alt="" class="img-responsive" />
+					<div>
+						<p class="glyphicon glyphicon-thumbs-up">
+							两种口味可供选择
+						</p>
+						<div class="cur">
+							<span>
+								<a href="#" class="morebtn">添加到购物车</a>
+								<span>
+									<h6>一口价：￥45.00</h6>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h3>蒙特斯大虾</h3>
+					<img src="img/example_P240/drink/drink_02.jpg" class="img-responsive" alt="蒙特斯大虾"/>
+					<div>
+						<p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p>
+						<div class="cur">
+							<span>
+								<a href="#" class="morebtn">添加到购物车</a>
+							</span>
+							<span>
+								<h6>一口价：￥55.00</h6>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h3>香酥鸡排</h3>
+					<img src="img/example_P240/drink/drink_03.jpg" alt="香酥鸡排" class="img-responsive" />
+					<div>
+						<p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p>
+					    <div class="cur">
+					    	<span>
+					    		<a href="#" class="morebtn">添加到购物车</a>
+					    	</span>
+					    	<span>
+					    		<h6>一口价：￥65.00</h6>
+					    	</span>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="choose">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="navbar-header hidden-xs">
+							<a href="#" class="navbar-brand">
+								<img src="img/example_P240/logo_P240.png"/>
+							</a>
+						</div>
+						<ul class="nav nav-pills navbar-right" role="tablist" style="margin-right: 0;">
+							<li class="active" role="presentation">
+								<a href="#dishes" role="tab" data-toggle="tab">菜品</a>
+							</li>
+							<li role="presentation">
+								<a href="#drink" role="tab" data-toggle="tab">饮品</a>
+							</li>
+							<li role="presentation">
+								<a href="#staple" role="tab" data-toggle="tab">主食</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="dishes">
+								<div class="col-md-2 col-sm-4 col-xs-6 product-item">
+									<img src="img/example_P240/food_01.jpg"/>
+									<p>菜品</p>
+									<p>￥145.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_02.jpg"/>
+									<p>菜品</p>
+									<p>￥165.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_03.jpg"/>
+									<p>菜品</p>
+									<p>￥165.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_04.jpg"/>
+									<p>菜品</p>
+									<p>￥165.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_05.jpg"/>
+									<p>菜品</p>
+									<p>￥145.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_08.jpg"/>
+									<p>菜品</p>
+									<p>￥145.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_09.jpg"/>
+									<p>菜品</p>
+									<p>￥145.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/food_06.jpg"/>
+									<p>菜品</p>
+									<p>￥165.0</p>
+								</div>
+								
+								<div class="col-md-2 col-sm-4 col-xs-6 product-item" >
+								<img src="img/example_P240/food_01.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_02.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_09.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_05.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_04.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_05.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_06.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							
+							<div class="col-md-2 col-sm-4 col-xs-6 product-item" >
+								<img src="img/example_P240/food_01.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_07.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_03.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_08.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_05.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_06.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							
+							<div class="col-md-2 col-sm-4 col-xs-6 product-item" >
+								<img src="img/example_P240/food_01.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_02.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_03.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_04.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_05.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_06.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							
+							<div class="col-md-2 col-sm-4 col-xs-6 product-item" >
+								<img src="img/example_P240/food_01.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_02.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_03.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_04.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_05.jpg"/>
+								<p>菜品</p>
+								<p>￥145.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/food_06.jpg"/>
+								<p>菜品</p>
+								<p>￥165.0</p>
+							</div>
+								
+							</div>
+							
+							<div class="tab-pane" role="tabpanel" id="drink">
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_01.jpg"/>
+									<p>饮品</p>
+									<p>￥98.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_02.jpg"/>
+									<p>饮品</p>
+									<p>￥89.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_03.jpg"/>
+									<p>饮品</p>
+									<p>￥98.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_04.jpg"/>
+									<p>饮品</p>
+									<p>￥89.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_05.jpg"/>
+									<p>饮品</p>
+									<p>￥98.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_06.jpg"/>
+									<p>饮品</p>
+									<p>￥89.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_07.jpg"/>
+									<p>饮品</p>
+									<p>￥98.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/drink/drink_08.jpg"/>
+									<p>饮品</p>
+									<p>￥89.0</p>
+								</div>
+								
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_01.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_02.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_03.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_04.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_05.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_06.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_07.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_08.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_01.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_02.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_03.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_04.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_05.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_06.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_07.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_08.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_01.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_02.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_03.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_04.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_05.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_06.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_07.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_08.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_01.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_02.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_03.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_04.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_05.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_06.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_07.jpg"/>
+								<p>饮品</p>
+								<p>￥98.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/drink/drink_08.jpg"/>
+								<p>饮品</p>
+								<p>￥89.0</p>
+							</div>
+								
+							</div>
+							
+							<div class="tab-pane" id="staple" role="tabpanel">
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/main_food/main_food_01.jpg"/>
+									<p>主食</p>
+									<p>￥56.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/main_food/main_food_07.jpg"/>
+									<p>主食</p>
+									<p>￥56.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/main_food/main_food_08.jpg"/>
+									<p>主食</p>
+									<p>￥65.0</p>
+								</div>
+							
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/main_food/main_food_02.jpg"/>
+									<p>主食</p>
+									<p>￥56.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/main_food/main_food_03.jpg"/>
+									<p>主食</p>
+									<p>￥56.0</p>
+								</div>
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+									<img src="img/example_P240/main_food/main_food_09.jpg"/>
+									<p>主食</p>
+									<p>￥65.0</p>
+								</div>
+								
+								<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_05.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_04.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_11.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_05.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_06.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_12.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_12.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_13.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_14.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_15.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_01.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_07.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_08.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+							
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_02.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_03.jpg"/>
+								<p>主食</p>
+								<p>￥56.0</p>
+							</div>
+							<div class="product-item col-md-2 col-sm-4 col-xs-6">
+								<img src="img/example_P240/main_food/main_food_09.jpg"/>
+								<p>主食</p>
+								<p>￥65.0</p>
+							</div>
+								
+							</div>
+						</div>	    
+					</div>		
+				</div>
+			</div>
+		</div>
+		
+<div class="container hidden-xs">
+	<div class="carousel slide" id="myCarousel" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_01.jpg" />
+					<img src="img/example_P248/foodLogo_02.jpg" />
+					<img src="img/example_P248/foodLogo_03.jpg" />
+					<img src="img/example_P248/foodLogo_04.jpg" />
+					<img src="img/example_P248/foodLogo_05.jpg" />
+					<img src="img/example_P248/foodLogo_06.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_02.jpg" />
+					<img src="img/example_P248/foodLogo_03.jpg" />
+					<img src="img/example_P248/foodLogo_04.jpg" />
+					<img src="img/example_P248/foodLogo_05.jpg" />
+					<img src="img/example_P248/foodLogo_06.jpg" />
+					<img src="img/example_P248/foodLogo_07.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_03.jpg" />
+					<img src="img/example_P248/foodLogo_04.jpg" />
+					<img src="img/example_P248/foodLogo_05.jpg" />
+					<img src="img/example_P248/foodLogo_06.jpg" />
+					<img src="img/example_P248/foodLogo_07.jpg" />
+					<img src="img/example_P248/foodLogo_08.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_04.jpg" />
+					<img src="img/example_P248/foodLogo_05.jpg" />
+					<img src="img/example_P248/foodLogo_06.jpg" />
+					<img src="img/example_P248/foodLogo_07.jpg" />
+					<img src="img/example_P248/foodLogo_08.jpg" />
+					<img src="img/example_P248/foodLogo_01.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_05.jpg" />
+					<img src="img/example_P248/foodLogo_06.jpg" />
+					<img src="img/example_P248/foodLogo_07.jpg" />
+					<img src="img/example_P248/foodLogo_08.jpg" />
+					<img src="img/example_P248/foodLogo_01.jpg" />
+					<img src="img/example_P248/foodLogo_02.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_06.jpg" />
+					<img src="img/example_P248/foodLogo_07.jpg" />
+					<img src="img/example_P248/foodLogo_08.jpg" />
+					<img src="img/example_P248/foodLogo_01.jpg" />
+					<img src="img/example_P248/foodLogo_02.jpg" />
+					<img src="img/example_P248/foodLogo_03.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_07.jpg" />
+					<img src="img/example_P248/foodLogo_08.jpg" />
+					<img src="img/example_P248/foodLogo_01.jpg" />
+					<img src="img/example_P248/foodLogo_02.jpg" />
+					<img src="img/example_P248/foodLogo_03.jpg" />
+					<img src="img/example_P248/foodLogo_04.jpg" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="pic">
+					<img src="img/example_P248/foodLogo_08.jpg" />
+					<img src="img/example_P248/foodLogo_01.jpg" />
+					<img src="img/example_P248/foodLogo_02.jpg" />
+					<img src="img/example_P248/foodLogo_03.jpg" />
+					<img src="img/example_P248/foodLogo_04.jpg" />
+					<img src="img/example_P248/foodLogo_05.jpg" />
+				</div>
+			</div>
+		</div>
+		<a href="#myCarousel" class="carousel-control left" role="button" data-slide="prev">&lsaquo;</a>
+		<a href="#myCarousel" class="carousel-control right" role="button" data-slide="next">&rsaquo;</a>
+	</div>
+</div>
+		
+<footer class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<p>
+				Copyrights&nbsp;&nbsp;&copy;&nbsp;&nbsp;Bootstrap响应式餐饮网站&nbsp;&nbsp;|&nbsp;&nbsp;版权所有<a href="#"></a>
+			</p>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-phone-alt">&nbsp;联系我们</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-phone-alt">&nbsp;公司地址</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-phone-alt">&nbsp;服务声明</i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>		
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>

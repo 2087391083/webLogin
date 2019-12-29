@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	widows: 100%;
+	height: 100%;
+}
+.top{
+	width: 71%;
+	height: 13%;
+	padding: 0 195px;
+}
+.topLeft{
+	float: left;
+	width: ;
+}
+.topLeft>img{
+	padding-top: 20px;
+}
+.topRight{
+	float: right;
+	line-height: 80px;
+}
+.bottom{
+	overflow: hidden;
+	width: 100%;
+	height: 87%;
+	background-color: rgb(240,246,254);
+}
+.bottomLeft{
+	padding-left: 150px;
+	padding-top: 25px;
+	width: 700px;
+	height: 95%;
+	float: left;
+}
+.bottomRight{
+	padding-top: 50px;
+	width: 350px;
+	height: 93%;
+	float: left;
+}
+.bottomRightLogin{
+	width: 250px;
+	height: 310px;
+	background-color: white;
+	border: 1px solid gainsboro;
+	box-shadow: 0 0 8px 0 gray;
+	padding: 40px 35px;
+}
+#FormInput1,#FormInput2,#FormInput5{
+	width: 240px;
+	height: 40px;
+	margin: 8px 0;
+}
+#FormInput3,#FormInput4{
+	font-size: 14px;
+	margin: 10px 0;
+}
+#FormInput5{
+	border: none;
+	background-color: lightseagreen;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+	font-size: 20px;
+}
+#FormInput5:hover{
+	opacity: 0.8;
+}
+.bottomRightLoginP{
+	font-size: 12px;
+	margin-top: 20px;
+}
